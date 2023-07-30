@@ -2,7 +2,7 @@ import oloren as olo
 import json
 import requests
 import xml.etree.ElementTree as ET
-
+import os
 
 ENTREZ_BASE_URL = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils'
 
@@ -54,4 +54,4 @@ def download_entrez_records_from_uid(database=olo.String(), uid_list=olo.String(
     return get_request(full_url)
 
 if __name__ == "__main__":    
-    olo.run(os.environ["EXTENSION_NAME"], port=80)
+    olo.run("bioapis", port=80)
