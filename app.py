@@ -1,5 +1,4 @@
 import oloren as olo
-import pandas as pd
 import json
 import requests
 import xml.etree.ElementTree as ET
